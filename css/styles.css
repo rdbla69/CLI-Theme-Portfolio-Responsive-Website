@@ -1,0 +1,210 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: "Courier New", monospace;
+    background-color: #000000; /* Dark background for CLI feel */
+    color: #00FF00; /* Neon green text */
+}
+
+/* Header */
+header {
+    padding: 2rem 1rem;
+    text-align: left;
+    
+
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #00FF00;
+}
+ 
+
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: right;
+    gap: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: #FFD700; /* Neon green */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+nav a.active { 
+    border-bottom: 2px solid #ee2020; /* Add an underline with a specific color */
+    padding-bottom: 5px; /* Adjust the space between the text and the underline */
+}
+nav a:hover {
+    color: #ffffff; /* White on hover */
+    border-bottom: 1px solid #ffffff; /* Underline effect */
+}
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+/* Section cards */
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #000000; /* Dark section backgrounds */
+    border: 1px solid #ffffff;
+    
+}
+
+/* Section headers */
+section h2 {
+    color: #00FF00; /* Green headers for CLI feel */
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+/* SLIDING EFFECT */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden; /* Hide the overflowing images */
+}
+
+.slide {
+    display: none; /* Initially hide all slides */
+    width: 100%;
+    opacity: 0; /* Start with no opacity */
+    transition: opacity 1s ease-in-out; /* Smooth fade transition */
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Active slide */
+.slide.active {
+    display: block;
+    opacity: 1; /* Full opacity when active */
+}
+.technologies {
+    font-size: 1.2em;
+    color: #00FF00;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* Style each technology with borders */
+.tech {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.tech:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #fff;
+}
+/* END OF SLIDING EFFECT */
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #000000;
+    color: #00FF00;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+    margin-top: 2rem;
+}
+
+/* Hamburger button - hidden on desktop */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+}
+
+/* Navigation links */
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Hide menu in mobile by default */
+.nav-links {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+}
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
