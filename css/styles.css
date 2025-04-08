@@ -15,12 +15,14 @@ body {
     background-color: #000000; /* Dark background for CLI feel */
     color: #00FF00; /* Neon green text */
 }
-
 /* Header */
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #000000; /* ensure it stays visible */
     padding: 2rem 1rem;
-    text-align: left;
-    
+    text-align: left;      
 
 }
 
