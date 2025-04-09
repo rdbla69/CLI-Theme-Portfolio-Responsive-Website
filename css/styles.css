@@ -15,6 +15,45 @@ body {
     background-color: #000000; /* Dark background for CLI feel */
     color: #00FF00; /* Neon green text */
 }
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #00FF00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Courier New", monospace;
+    z-index: 9999;
+}
+
+.loading-bar {
+    width: 60%;
+    height: 20px;
+    border: 2px solid #00FF00;
+    margin-top: 1rem;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    width: 0;
+    background-color: #00FF00;
+    animation: loadBar 3s ease forwards;
+}
+#loading-text {
+    font-size: 1.2rem;
+    color: #00FF00;
+}
+@keyframes loadBar {
+    from { width: 0; }
+    to { width: 100%; }
+}
 /* Header */
 header {
     position: sticky;
@@ -49,7 +88,7 @@ nav ul {
 }
 
 nav a {
-    color: #FFD700; /* Neon green */
+    color: #FFD700; 
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -72,14 +111,14 @@ main {
 section {
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background-color: #000000; /* Dark section backgrounds */
+    background-color: #000000; 
     border: 1px solid #ffffff;
     
 }
 
 /* Section headers */
 section h2 {
-    color: #00FF00; /* Green headers for CLI feel */
+    color: #00FF00; 
     font-size: 1.8rem;
     margin-bottom: 0.8rem;
 }
