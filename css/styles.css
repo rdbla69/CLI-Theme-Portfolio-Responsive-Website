@@ -6,7 +6,8 @@
 }
 
 body {
-
+    width: 100%;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -113,6 +114,10 @@ section {
     padding: 1.5rem;
     background-color: #000000; 
     border: 1px solid #ffffff;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    display: block;
     
 }
 
@@ -122,6 +127,7 @@ section h2 {
     font-size: 1.8rem;
     margin-bottom: 0.8rem;
 }
+
 /* SLIDING EFFECT */
 .slider {
     position: relative;
