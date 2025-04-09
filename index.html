@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
+<div id="preloader">
+    <p id="loading-text">Loading<span id="dots">.</span></p>
+    <div class="loading-bar">
+      <div class="bar-fill"></div>
+    </div>
+  </div>
 <body>
  <header>
-        <h1>>PORTFOLIO</h1>
+        <h1>>[PORTFOLIO]</h1>
         <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
         <nav class="nav-links">
             <ul>
@@ -21,19 +27,18 @@
             </ul>
         </nav>
     </header>
-    
     <main>
         <section id="about">
-            <h1>$About Me</h1>
+            <h1>$About Me:</h1>                                                              
             <p style="font-size: 1.5em; color: #FF00FF;">Hi I'm Kath! I am a second-year college student pursuing a degree in Computer Science at Taguig City University. I am passionate about technology, cybersecurity, UI/UX design and continuously learning new skills to enhance my knowledge in the field of software development.</p>
         </section>
         <section id="projects">
-            <h2>$Projects</h2>
+            <h2>$Projects:</h2>
             <p style="font-size: 1.5em; color: #FF00FF;">The Pinoyflask Ordering System is an ongoing project aimed at streamlining online orders for customized flasks. It features seamless payment integration with Xendit and GCash, ensuring a smooth and secure transaction process for customers.</p>
             <div class="slider">
                 <!-- Slide 1 -->
                 <div class="slide">
-                    <img src="images/slide-1.png" alt="Project View 1">
+                    <img src="../images/slide-1.png" alt="Project View 1">
                     <p class="technologies">
                         <span class="tech">HTML</span>
                         <span class="tech">CSS</span>
@@ -44,7 +49,7 @@
                 </div>
                 <!-- Slide 2 -->
                 <div class="slide">
-                    <img src="images/slide-2.png" alt="Project View 2">
+                    <img src="../images/slide-2.png" alt="Project View 2">
                     <p class="technologies">
                         <span class="tech">HTML</span>
                         <span class="tech">CSS</span>
@@ -55,7 +60,7 @@
                 </div>
                 <!-- Slide 3 -->
                 <div class="slide">
-                    <img src="images/slide-3.png" alt="Project View 3">
+                    <img src="../images/slide-3.png" alt="Project View 3">
                     <p class="technologies">
                         <span class="tech">HTML</span>
                         <span class="tech">CSS</span>
@@ -67,7 +72,7 @@
             </div>
         </section>
         <section id="contact">
-            <h2>$Contact</h2>
+            <h2>$Contact:</h2>
             <ul> 
                 <li><a href="https://www.linkedin.com/in/kathrinakrizelloria/" target="_blank" style="color: #006eff;">[LinkedIn]: https://www.linkedin.com/in/kathrinakrizelloria/</a></li>
                 <li><a href="https://github.com/rdbla69" target="_blank" style="color: #006eff;">[GitHub]: https://github.com/rdbla69</a></li>
@@ -75,15 +80,15 @@
             </ul>
         </section>
         <section id="Links">
-            <h2>$Tryhackme</h2>
+            <h2>$Tryhackme:</h2>
             <p style="font-size: 1.5em; color: #FF00FF;">Check out my Tryhackme Profile!</p>
-            <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1203230" width="100%" height="600px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1203230" width="100%" height="100px" frameborder="0" scrolling="no" allowfullscreen></iframe>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Kathrina Krizel Loria</p>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
 </html>
